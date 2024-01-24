@@ -1,0 +1,35 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- For development, it’s recommended to enable the debug mode. -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <charset>UTF-8</charset>
+            <!--
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            -->
+            <!-- 
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%-5level] [%logger{35}:%line] %msg%n</pattern>
+            -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread][%-5level][%c:%M:%L] %msg%n</pattern>
+            
+        </encoder>
+    </appender>
+    <!-- 
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>log/${server.name}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>log/old/${server.name}%d{yyyy-MM-dd}-%i.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS}[%thread][%-5level][%logger{35}:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+    -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/> 
+        <!-- <appender-ref ref="FILE"/> -->
+    </root>
+</configuration>
+<!-- https://mkyong.com/logging/slf4j-logback-tutorial/-->
