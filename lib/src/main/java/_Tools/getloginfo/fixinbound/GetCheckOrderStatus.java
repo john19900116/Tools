@@ -8,9 +8,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class GetCheckOrderStatus {
-	private static final String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\FIXProtocol\\2. 相關Log\\uat\\2024.01.22fubon\\";
+	private static final String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\FIXProtocol\\2. 相關Log\\prod\\2024.01.31fubon\\";
 	private static final String dataPath = path + "FIXInbound.log";
-	private static final String clordId = "20240122-00009-00001";
+	private static final String clordId = "20240131-00002-00001";
 	private static final String outDataPath = path + clordId + ".log";
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
@@ -52,6 +52,9 @@ public class GetCheckOrderStatus {
 					bw.newLine();
 
 				}
+				
+				
+				
 
 				if (data.indexOf("OnRcvDataReceive DataType") != -1 && data.indexOf(clordId) != -1) {
 //					System.out.println(data.substring(data.indexOf("Message : [") + "Message : [".length(), data.indexOf("] Start Process")));

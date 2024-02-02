@@ -8,8 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class GetCheckOrderStatus {
-	private static final String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\外期GW\\2. 相關Log\\20240111ttgw\\";
-	private static final String dataPath = path + "GW.dug.20240111";
+	private static final String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\外期GW\\2. 相關Log\\20240130ttgw\\";
+	private static final String dataPath = path + "GW.dug.20240130";
 	private static final String outDataPath = path + "check.log";
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
@@ -24,7 +24,7 @@ public class GetCheckOrderStatus {
 
 				}
 
-				if (data.indexOf("toApp:NewOrderMultileg") != -1 || data.indexOf("fromApp:ExecutionReport") != -1 || data.indexOf("toApp:MultilegOrderCancelReplaceRequest") != -1) {
+				if (data.indexOf("toApp:NewOrderMultileg") != -1 || data.indexOf("fromApp:ExecutionReport") != -1 || data.indexOf("toApp:MultilegOrderCancelReplaceRequest") != -1 || data.indexOf("toApp:NewOrderSingle") != -1) {
 					bw.write(data);
 					bw.newLine();
 
