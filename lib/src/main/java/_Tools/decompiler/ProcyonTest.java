@@ -22,8 +22,8 @@ public class ProcyonTest {
 	public static void main(String[] args) throws IOException {
 
 		String jarName = "KgiFixGwSv.jar";
-		String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\外期GW\\6. 版本\\ttgw\\";
-		String version = "TEST" + "\\";
+		String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\外期GW\\6. 版本\\ttgw\\TEST\\";
+		String version = "ttjpxgw" + "\\";
 		Long time = procyon(path + version + jarName, path + version + jarName.split("[.]")[0]);
 		System.out.println(String.format("decompiler time: %dms", time));
 	}
