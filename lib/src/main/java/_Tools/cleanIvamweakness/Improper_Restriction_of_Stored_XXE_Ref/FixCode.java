@@ -1,4 +1,10 @@
-//package _Tools.Improper_Restriction_of_Stored_XXE_Ref;
+//package _Tools.cleanIvamweakness.Improper_Restriction_of_Stored_XXE_Ref;
+//
+//import java.io.StringReader;
+//
+//import javax.xml.bind.Unmarshaller;
+//import javax.xml.stream.XMLInputFactory;
+//import javax.xml.stream.XMLStreamReader;
 //
 //public class FixCode {
 //

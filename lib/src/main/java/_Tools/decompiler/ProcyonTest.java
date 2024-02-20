@@ -13,7 +13,7 @@ import org.jboss.windup.decompiler.api.Decompiler;
 import org.jboss.windup.decompiler.procyon.ProcyonDecompiler;
 
 /**
- * Procyon 反編譯測試
+ * Procyon 反編譯
  *
  * @author https://github.com/niumoo
  * @date 2021/05/15
@@ -21,9 +21,9 @@ import org.jboss.windup.decompiler.procyon.ProcyonDecompiler;
 public class ProcyonTest {
 	public static void main(String[] args) throws IOException {
 
-		String jarName = "KgiFixGwSv.jar";
-		String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\外期GW\\6. 版本\\ttgw\\TEST\\";
-		String version = "ttjpxgw" + "\\";
+		String jarName = "DataToRedis.jar";
+		String path = "D:\\Workspace\\git\\DataToRedis\\build\\libs\\";
+		String version = "";
 		Long time = procyon(path + version + jarName, path + version + jarName.split("[.]")[0]);
 		System.out.println(String.format("decompiler time: %dms", time));
 	}

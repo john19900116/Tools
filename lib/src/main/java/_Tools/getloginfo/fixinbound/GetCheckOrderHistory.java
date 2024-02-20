@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class GetCheckOrderStatus {
+public class GetCheckOrderHistory {
 	private static final String path = "C:\\Users\\0012252\\Desktop\\Tools\\project\\FIXProtocol\\2. 相關Log\\prod\\2024.01.31fubon\\";
 	private static final String dataPath = path + "FIXInbound.log";
 	private static final String clordId = "20240131-00002-00001";

@@ -1,4 +1,4 @@
-package _Tools.testCopyOnWriteArrayList;
+package _Tools.CopyOnWriteArrayList;
 
 import java.util.ArrayList;
 import java.util.List;

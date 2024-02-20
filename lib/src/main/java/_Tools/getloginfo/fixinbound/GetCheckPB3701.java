@@ -18,15 +18,15 @@ public class GetCheckPB3701 {
 
 			while ((data = br.readLine()) != null) {
 
-//				if (data.indexOf("Send To [10.99.24.116:7000] Order : 3701") != -1) {
-//					
-//					bw.write(data);
-//					bw.newLine();
-//					bw.newLine();
-//					bw.newLine();
-//					bw.newLine();
-//
-//				}
+				if (data.indexOf("Send To [10.99.24.116:7000] Order : 3701") != -1) {
+
+					bw.write(data);
+					bw.newLine();
+					bw.newLine();
+					bw.newLine();
+					bw.newLine();
+
+				}
 
 				if (data.indexOf("fromApp:NewOrderSingle") != -1) {
 
